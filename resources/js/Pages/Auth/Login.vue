@@ -17,6 +17,8 @@ let errorMensaje = ref(null);
 let refDialogPasswordRecovery = ref();
 let errors = ref({});
 
+let nombreSistema = 'Sistema Base';
+
 const form = ref({
     email: '',
     password: '',
@@ -90,11 +92,11 @@ const submit = async () => {
                         <!-- Logo -->
                         <div class="app-brand justify-content-center mb-6">
                             <a href="#" class="app-brand-link">
-                                <span class="app-brand-text demo text-heading fw-bold">WEB GALEN</span>
+                                <span class="app-brand-text demo text-heading fw-bold">{{ nombreSistema }}</span>
                             </a>
                         </div>
 
-                        <h4 class="mb-1">¡Bienvenido a WEB GALEN! 👋</h4>
+                        <h4 class="mb-1">¡Bienvenido a {{ nombreSistema }} 👋</h4>
                         <p class="mb-6">Inicia sesión en tu cuenta y comienza la aventura.</p>
                         <Message severity="error" v-if="errorMensaje" class="mb-2">{{ errorMensaje }}</Message>
 

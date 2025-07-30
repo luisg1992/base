@@ -49,8 +49,8 @@ class LoginController extends Controller
             'IdUsuario' => $user->id,
         ];
 
-        $response = (new ApiAuditoriaImpresionController())->store($dataJson)->getData(true);
-        $externalId = $response['success'] ? $response['data']['external_id'] : null;
+        //$response = (new ApiAuditoriaImpresionController())->store($dataJson)->getData(true);
+        //$externalId = $response['success'] ? $response['data']['external_id'] : null;
 
         $parametro = Parametro::query()->where('Codigo', 'SMS_LOGIN')->first();
         if ($parametro && $parametro->ValorTexto === 'S') {
@@ -63,7 +63,7 @@ class LoginController extends Controller
         $data = [
             'success' => true,
             'data' => [
-                'externalId' => $externalId,
+                'externalId' => 1,
             ]
         ];
         return response()->json($data);

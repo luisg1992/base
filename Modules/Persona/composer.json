@@ -1,0 +1,30 @@
+{
+    "name": "webgalen/persona",
+    "description": "",
+    "authors": [
+        {
+            "name": "WebGalen",
+            "email": "sigesa.his@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Persona\\": "app/",
+            "Modules\\Persona\\Database\\Factories\\": "database/factories/",
+            "Modules\\Persona\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Persona\\Tests\\": "tests/"
+        }
+    }
+}

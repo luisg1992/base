@@ -1,0 +1,30 @@
+{
+    "name": "webgalen/imagenologia",
+    "description": "",
+    "authors": [
+        {
+            "name": "WebGalen",
+            "email": "sigesa.his@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Imagenologia\\": "app/",
+            "Modules\\Imagenologia\\Database\\Factories\\": "database/factories/",
+            "Modules\\Imagenologia\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Imagenologia\\Tests\\": "tests/"
+        }
+    }
+}

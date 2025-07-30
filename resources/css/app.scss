@@ -1,0 +1,436 @@
+@use 'tailwindcss';
+@use '../js/components/index.scss';
+@use 'toast';
+
+/* Fonts & Icons (si los necesitas) */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Importar estilos de vendor */
+@import url('../assets/vendor/fonts/fontawesome.css');
+@import url('../assets/vendor/fonts/tabler-icons.css');
+@import url('../assets/vendor/fonts/flag-icons.css');
+
+/* Importar estilos de core y tema */
+@import url('../assets/vendor/css/rtl/core.css');
+@import url('../assets/vendor/css/rtl/theme-default.css');
+
+/* Otros estilos generales */
+@import url('../assets/css/demo.css');
+/* @import url('../assets/vendor/libs/sweetalert2/sweetalert2.css'); */
+
+@import url('../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css');
+
+@import url('../assets/vendor/css/pages/page-auth.css');
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+input,
+select,
+textarea,
+table,
+button,
+a,
+label {
+    font-size: 0.7rem !important;
+}
+
+select,
+table,
+button,
+a,
+label {
+    text-transform: uppercase !important;
+}
+
+label {
+    font-weight: 900 !important;
+    color: #6f6b7d !important;
+}
+
+/* li {
+    font-weight: 900 !important;
+} */
+
+.modal {
+    display: block;
+    background-color: #97959e73;
+}
+
+td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h2,
+.h2 {
+    line-height: 1.5rem;
+}
+
+.row {
+    --bs-gutter-y: 0.5rem;
+}
+
+
+.p-select.p-disabled {
+    opacity: 1;
+    background: #fff !important;
+    border: 1px dashed #ccc !important;
+}
+
+//.p-select-overlay {
+//    z-index: 1102 !important;
+//}
+
+.p-select-option {
+    font-weight: 400 !important;
+    cursor: pointer !important;
+}
+
+.p-select-option.p-select-option-selected.p-focus {
+    background: rgba(115, 103, 240, 0.16) !important;
+    color: #7367f0 !important;
+}
+
+.p-select-option.p-select-option-selected {
+    background: rgba(115, 103, 240, 0.16) !important;
+    color: #7367f0 !important;
+}
+
+.p-select:not(.p-disabled).p-focus {
+    border-color: #7367f0 !important;
+}
+
+.dropdown-item {
+    padding: 0.44rem 1rem !important;
+    font-weight: 400;
+}
+
+.p-select-sm .p-select-label {
+    font-size: 0.7rem !important;
+}
+
+.p-select-list {
+    font-size: 0.8rem !important;
+}
+
+.p-select-sm .p-select-label {
+    padding-block: 0.45rem !important;
+}
+
+.btn {
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-padding-y: 0.4rem;
+}
+
+.light-style .swal2-popup .swal2-title {
+    font-size: 1.1rem !important;
+    text-align: center !important;
+}
+
+div:where(.swal2-container) {
+    z-index: 9999 !important;
+}
+
+.swal2-modal.swal2-popup .swal2-title {
+    max-width: 100%;
+}
+
+div:where(.swal2-container) div:where(.swal2-html-container) {
+    font-size: 0.75em !important
+}
+
+div:where(.swal2-container) div:where(.swal2-popup) {
+    width: 27em !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel) {
+    background-color: #292a2b66 !important;
+}
+
+/*.menu-vertical .menu-item .menu-toggle {*/
+/*    padding-right: calc(1rem + 1.26em) !important;*/
+/*}*/
+
+.p-tree-node-label {
+    font-weight: 500 !important;
+    font-size: 0.75rem !important;
+    text-transform: uppercase !important;
+}
+
+.p-inputtext:enabled:focus {
+    border-color: #7367f0 !important;
+}
+
+.p-checkbox-checked .p-checkbox-box {
+    background: #7367f0 !important;
+    border-color: #7367f0 !important;
+}
+
+.p-checkbox-checked:not(.p-disabled):has(.p-checkbox-input:hover) .p-checkbox-box {
+    background: #7367f0 !important;
+    border-color: #7367f0 !important;
+}
+
+.p-tree-node-content {
+    padding: 0rem;
+}
+
+.p-inputtext {
+    width: 100% !important;
+}
+
+.p-autocomplete {
+    width: 100%;
+}
+
+.p-autocomplete-option {
+    text-transform: uppercase !important;
+    white-space: normal !important;
+}
+
+.p-autocomplete-overlay {
+    width: 450px !important;
+}
+
+.p-autocomplete-items .p-autocomplete-item {
+    white-space: normal !important;
+    word-break: break-word !important;
+    line-height: 1.4 !important;
+}
+
+.menu-vertical .menu-item .menu-link,
+.menu-vertical .menu-block {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.x-tabla-catalogo td {
+    padding: 4px !important;
+}
+
+.x-tabla-catalogo th {
+    padding: 4px !important;
+}
+
+.x-modal-full {
+    min-height: 100% !important;
+}
+
+.x-modal-full .p-dialog-header {
+    height: 60px !important;
+}
+
+.x-modal-full .p-dialog-content {
+    height: calc(100vh - 122px);
+}
+
+.p-tab-active {
+    border-color: #7367f0 !important;
+    color: #7367f0 !important;
+}
+
+.p-tab:not(.p-disabled):focus-visible {
+    box-shadow: var(--p-tabs-tab-focus-ring-shadow);
+    outline: #7367f0 !important;
+    outline-offset: var(--p-tabs-tab-focus-ring-offset);
+}
+
+.list-group .list-group-item {
+    line-height: 1rem !important;
+    padding: 0.2rem 0.5rem !important;
+}
+
+.dropdown-menu-fixed {
+    position: fixed !important;
+}
+
+.dragArea .ti.icon::before {
+    font-size: 28px !important;
+}
+
+.p-dialog-header {
+    padding: 12px 18px !important;
+}
+
+
+.truncate-text {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.salto-de-linea {
+    white-space: normal;
+    word-break: break-word;
+}
+
+.p-multiselect {
+    width: 100% !important;
+}
+
+.divider .divider-text {
+    font-size: 0.8rem !important;
+}
+
+.divider {
+    margin: 0.5rem 0;
+}
+
+.p-textarea {
+    width: 100% !important;
+}
+
+.p-textarea:enabled:focus {
+    border-color: #7367f0 !important;
+}
+
+.card {
+    box-shadow: none !important;
+}
+
+.otp-input {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 0 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.otp-input.is-complete {
+}
+
+.otp-input::-webkit-inner-spin-button,
+.otp-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.dragArea {
+    min-height: 8px;
+}
+
+.x-div-module {
+    border-top: 1px dashed #ccc;
+}
+
+.p-dialog {
+    border: none !important;
+}
+
+/*.menu-item .menu-sub {*/
+/*    display: none;*/
+/*}*/
+
+/*.menu-item.open > .menu-sub {*/
+/*    display: block;*/
+/*}*/
+
+/*!*.p-panelmenu-header-link {*!*/
+/*!*    display: flex;*!*/
+/*!*    align-items: center;*!*/
+/*!*    justify-content: space-between;*!*/
+/*!*    width: 100%;*!*/
+/*!*}*!*/
+
+/*!* Solo aplica cuando hay flecha (ícono de submenú) *!*/
+/*.p-panelmenu-header-link {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*}*/
+
+/*!* Mueve la flecha solo si existe *!*/
+/*.p-panelmenu-header-link .p-panelmenu-submenu-icon {*/
+/*    margin-left: auto;*/
+/*    order: 3;*/
+/*}*/
+
+.p-avatar-image img {
+    object-fit: cover !important;
+}
+
+.p-toast {
+    z-index: 999999 !important;
+}
+
+/* Puedes pegarlo en tu style global, o en el propio SFC */
+.tv-safe-area {
+    height: 96vh; /* 92% del alto visible, 4% arriba y abajo de margen */
+    width: 98vw;
+    margin: 2vh auto; /* 4% arriba y abajo, auto para centrar horizontal */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* Opcional: fondo y border-radius para debug */
+    /* background: #f6f6f6; border-radius: 24px; */
+}
+
+.flex-col-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.fila-superior {
+    //flex: 1 1 auto;
+    //background: #ffdddd;
+    height: calc(100vh - 200px);
+    //padding-bottom: 16px;
+    display: flex;
+    //align-items: center;
+    //justify-content: center;
+    padding-bottom: 16px;
+}
+
+.fila-inferior {
+    height: 180px;
+    min-height: 180px;
+    max-height: 180px;
+    //background: #ddffdd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-fija {
+    width: 320px;
+    min-width: 320px;
+    max-width: 320px;
+    //background: #d0e3ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-flex {
+    width: calc(100vw - 340px);
+    height: 180px;
+    //flex: 1 1 0;
+    background: #fff7d6;
+    display: flex;
+    //align-items: center;
+    //justify-content: center;
+}
+
+.w-popover-services {
+    .p-togglebutton-content {
+        justify-content: flex-start;
+        background: none !important;
+        box-shadow: none !important;
+    }
+}

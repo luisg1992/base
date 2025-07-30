@@ -1,0 +1,30 @@
+{
+    "name": "webgalen/auditoria",
+    "description": "",
+    "authors": [
+        {
+            "name": "WebGalen",
+            "email": "sigesa.his@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Auditoria\\": "app/",
+            "Modules\\Auditoria\\Database\\Factories\\": "database/factories/",
+            "Modules\\Auditoria\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Auditoria\\Tests\\": "tests/"
+        }
+    }
+}

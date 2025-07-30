@@ -1,0 +1,11 @@
+{
+    "name": "Auditoria",
+    "alias": "auditoria",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Auditoria\\Providers\\AuditoriaServiceProvider"
+    ],
+    "files": []
+}

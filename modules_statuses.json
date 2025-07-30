@@ -1,0 +1,16 @@
+{
+    "Auditoria": true,
+    "Core": true,
+    "Seguridad": true,
+    "Farmacia": true,
+    "Configuracion": true,
+    "Persona": true,
+    "ConsultaExterna": true,
+    "ProgramacionGeneral": true,
+    "Api": true,
+    "Emergencia": true,
+    "AtencionMedica": true,
+    "Facturacion": true,
+    "Reporte": true,
+    "Imagenologia": true
+}

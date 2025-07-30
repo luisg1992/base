@@ -1,0 +1,30 @@
+{
+    "name": "webgalen/api",
+    "description": "",
+    "authors": [
+        {
+            "name": "WebGalen",
+            "email": "sigesa.his@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Api\\": "app/",
+            "Modules\\Api\\Database\\Factories\\": "database/factories/",
+            "Modules\\Api\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Api\\Tests\\": "tests/"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "AtencionMedica",
+    "alias": "atencionmedica",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AtencionMedica\\Providers\\AtencionMedicaServiceProvider"
+    ],
+    "files": []
+}

@@ -1,0 +1,30 @@
+{
+    "name": "webgalen/configuracion",
+    "description": "",
+    "authors": [
+        {
+            "name": "WebGalen",
+            "email": "sigesa.his@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Configuracion\\": "app/",
+            "Modules\\Configuracion\\Database\\Factories\\": "database/factories/",
+            "Modules\\Configuracion\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Configuracion\\Tests\\": "tests/"
+        }
+    }
+}

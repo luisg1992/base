@@ -1,0 +1,30 @@
+{
+    "name": "webgalen/facturacion",
+    "description": "",
+    "authors": [
+        {
+            "name": "WebGalen",
+            "email": "sigesa.his@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Facturacion\\": "app/",
+            "Modules\\Facturacion\\Database\\Factories\\": "database/factories/",
+            "Modules\\Facturacion\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Facturacion\\Tests\\": "tests/"
+        }
+    }
+}

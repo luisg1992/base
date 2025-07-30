@@ -1,0 +1,30 @@
+{
+    "name": "webgalen/emergencia",
+    "description": "",
+    "authors": [
+        {
+            "name": "WebGalen",
+            "email": "sigesa.his@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Emergencia\\": "app/",
+            "Modules\\Emergencia\\Database\\Factories\\": "database/factories/",
+            "Modules\\Emergencia\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Emergencia\\Tests\\": "tests/"
+        }
+    }
+}

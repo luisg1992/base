@@ -1,0 +1,139 @@
+* {
+    font-size: 100%;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: normal;
+}
+
+
+@page {
+    margin: 25px !important;
+}
+
+body {
+    /*font-family: 'Anonymous Pro', monospace;*/
+    /*font-weight: initial;*/
+    /*overflow-x: hidden;*/
+    /*overflow-y: auto;*/
+    /*text-transform: uppercase;*/
+}
+
+.t-block {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-weight: normal;
+}
+
+.t-row {
+    display: block;
+    font-size: 7.5pt;
+    /*font-weight: 500;*/
+}
+
+.t-text-left {
+    text-align: left;
+}
+
+.t-text-center {
+    text-align: center;
+}
+
+.t-text-right {
+    text-align: right;
+}
+
+.logo {
+    max-width: 95%;
+    max-height: 120px;
+}
+
+.qr {
+    height: 100px;
+    /*width: auto;*/
+}
+
+.tabla-sin-bordes {
+    border-collapse: collapse;
+    border: none;
+    width: 100%;
+}
+
+
+.tamanio-15 {
+    font-size: 15pt;
+}
+
+.tamanio-14 {
+    font-size: 14pt;
+}
+
+.tamanio-13 {
+    font-size: 13pt;
+}
+
+.tamanio-12 {
+    font-size: 12pt;
+}
+
+.tamanio-11 {
+    font-size: 11pt;
+}
+
+.tamanio-10 {
+    font-size: 10pt;
+}
+
+.tamanio-9 {
+    font-size: 9pt;
+}
+
+.tamanio-8 {
+    font-size: 8pt;
+}
+
+.tamanio-7 {
+    font-size: 7pt;
+}
+
+.tamanio-6 {
+    font-size: 6pt;
+}
+
+.tamanio-5 {
+    font-size: 5pt;
+}
+
+.tamanio-5-5 {
+    font-size: 5.5pt;
+}
+
+.tamanio-4 {
+    font-size: 4pt;
+}
+
+.tamanio-3 {
+    font-size: 3pt;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+table tr td {
+    border: none;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+}
+
+.lineapunteada {
+    border-bottom: 1px dashed rgb(133, 131, 131);
+    width: 100%;
+}

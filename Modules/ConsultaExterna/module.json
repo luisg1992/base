@@ -1,0 +1,11 @@
+{
+    "name": "ConsultaExterna",
+    "alias": "consultaexterna",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ConsultaExterna\\Providers\\ConsultaExternaServiceProvider"
+    ],
+    "files": []
+}

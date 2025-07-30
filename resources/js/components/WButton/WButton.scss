@@ -1,0 +1,47 @@
+.w-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    gap: 0.4rem;
+    text-transform: none!important;
+    font-size: 0.8rem!important;
+    &.p-button-sm {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    &.p-button-lg {
+        font-size: 1.2rem!important;
+        padding: 0.75rem 1.5rem;
+    }
+
+    // Iconos personalizados
+    .button-icon,
+    .button-icon-right {
+        font-size: 1.2rem;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .button-icon {
+        margin-right: 0;
+    }
+
+    .button-icon-right {
+        margin-left: 0.5em;
+    }
+
+    // Estilo para íconos con animación de carga
+    .p-button-loading-icon {
+        margin-right: 0.5em;
+    }
+    &.w-button--icon-only {
+        &.p-button.p-button-sm {
+            padding: 2px 4px;
+            .button-icon {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

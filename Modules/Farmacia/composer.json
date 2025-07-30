@@ -1,0 +1,30 @@
+{
+    "name": "webgalen/farmacia",
+    "description": "",
+    "authors": [
+        {
+            "name": "WebGalen",
+            "email": "sigesa.his@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Farmacia\\": "app/",
+            "Modules\\Farmacia\\Database\\Factories\\": "database/factories/",
+            "Modules\\Farmacia\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Farmacia\\Tests\\": "tests/"
+        }
+    }
+}

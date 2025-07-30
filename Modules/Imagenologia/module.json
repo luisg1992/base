@@ -1,0 +1,11 @@
+{
+    "name": "Imagenologia",
+    "alias": "imagenologia",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Imagenologia\\Providers\\ImagenologiaServiceProvider"
+    ],
+    "files": []
+}

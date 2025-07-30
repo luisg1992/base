@@ -1,0 +1,30 @@
+{
+    "name": "webgalen/reporte",
+    "description": "",
+    "authors": [
+        {
+            "name": "WebGalen",
+            "email": "sigesa.his@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Reporte\\": "app/",
+            "Modules\\Reporte\\Database\\Factories\\": "database/factories/",
+            "Modules\\Reporte\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Reporte\\Tests\\": "tests/"
+        }
+    }
+}

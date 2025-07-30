@@ -1,0 +1,13 @@
+@use 'sass:map';
+
+$toast-colors: () !default;
+$toast-colors: map.merge(
+        (
+            "success": #DBFCE7,
+            "info": #17a2b8,
+            "warning": #ffc107,
+            "error": #FFE2E2,
+            "default": #343a40
+        ),
+        $toast-colors
+);

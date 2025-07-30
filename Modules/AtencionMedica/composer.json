@@ -1,0 +1,30 @@
+{
+    "name": "webgalen/atencionmedica",
+    "description": "",
+    "authors": [
+        {
+            "name": "WebGalen",
+            "email": "sigesa.his@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\AtencionMedica\\": "app/",
+            "Modules\\AtencionMedica\\Database\\Factories\\": "database/factories/",
+            "Modules\\AtencionMedica\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\AtencionMedica\\Tests\\": "tests/"
+        }
+    }
+}

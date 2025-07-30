@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\$CONTROLLER_NAMESPACE$\$STUDLY_NAME$Controller;
+
+Route::prefix('$MODULE_PREFIX$/$LOWER_NAME$')
+    ->middleware('auth')
+    ->controller($STUDLY_NAME$Controller::class)
+    ->as('$MODULE_PREFIX$.$LOWER_NAME$.')
+    ->group(function () {
+
+        // Página principal del módulo
+        Route::get('/', 'index')->name('index');
+
+        // Registros y detalles
+        Route::post('/records', 'records')->name('records');
+        Route::get('/record/{id}', 'show')->name('show');
+
+        // Almacenar nuevo registro
+        Route::post('/', 'store')->name('store');
+
+        // Eliminar registro
+        Route::get('/record_destroy/{id}', 'recordDestroy')->name('record.destroy');
+        Route::post('/destroy', 'destroy')->name('destroy');
+
+        // Cambiar estado
+        Route::get('/record_active/{id}', 'recordActive')->name('record.active');
+        Route::post('/change_active', 'changeActive')->name('change.active');
+
+        // Configuración de tabla
+        Route::get('/inicializar_tabla', 'inicializarTabla')->name('inicializar_tabla');
+        Route::post('/actualizar_visibilidad_columnas', 'actualizarVisibilidadColumnas')->name('actualizar_visibilidad_columnas'); // Actualizar columnas visibles
+    });

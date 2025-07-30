@@ -1,0 +1,19 @@
+.w-data-table {
+    .w-select-column.p-multiselect {
+        height: 36px !important;
+        width: 54px !important;
+
+        .p-multiselect-label-container {
+            display: none;
+        }
+        .p-multiselect-dropdown {
+            width: 100%;
+        }
+    }
+}
+
+.w-select-column-panel {
+    .p-multiselect-list {
+        font-size: 13px!important;
+    }
+}

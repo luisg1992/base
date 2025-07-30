@@ -1,0 +1,30 @@
+{
+    "name": "webgalen/seguridad",
+    "description": "",
+    "authors": [
+        {
+            "name": "WebGalen",
+            "email": "sigesa.his@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Seguridad\\": "app/",
+            "Modules\\Seguridad\\Database\\Factories\\": "database/factories/",
+            "Modules\\Seguridad\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Seguridad\\Tests\\": "tests/"
+        }
+    }
+}

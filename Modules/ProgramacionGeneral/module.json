@@ -1,0 +1,11 @@
+{
+    "name": "ProgramacionGeneral",
+    "alias": "programaciongeneral",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ProgramacionGeneral\\Providers\\ProgramacionGeneralServiceProvider"
+    ],
+    "files": []
+}

@@ -1,0 +1,178 @@
+* {
+    font-size: 100%; 
+    font-weight: normal;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: initial;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-transform: uppercase;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th, td {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.t-text-left {
+    text-align: left;
+}
+
+.t-text-center {
+    text-align: center;
+}
+
+.t-text-right {
+    text-align: right;
+}
+
+.tabla-sin-bordes {
+    border-collapse: collapse;
+    border: none;
+}
+
+.tamanio-15-5 {
+    font-size: 15.5pt;
+}
+
+.tamanio-15 {
+    font-size: 15pt;
+}
+
+.tamanio-14-5 {
+    font-size: 14.5pt;
+}
+
+.tamanio-14 {
+    font-size: 14pt;
+}
+
+.tamanio-13-5 {
+    font-size: 13.5pt;
+}
+
+.tamanio-13 {
+    font-size: 13pt;
+}
+
+.tamanio-12-5 {
+    font-size: 12.5pt;
+}
+
+.tamanio-12 {
+    font-size: 12pt;
+}
+
+.tamanio-11-5 {
+    font-size: 11.5pt;
+}
+
+.tamanio-11 {
+    font-size: 11pt;
+}
+
+.tamanio-10-5 {
+    font-size: 10.5pt;
+}
+
+.tamanio-10 {
+    font-size: 10pt;
+}
+
+.tamanio-9-5 {
+    font-size: 9.5pt;
+}
+
+.tamanio-9 {
+    font-size: 9pt;
+}
+
+.tamanio-8-5 {
+    font-size: 8.5pt;
+}
+
+.tamanio-8 {
+    font-size: 8pt;
+}
+
+.tamanio-7-5 {
+    font-size: 7.5pt;
+}
+
+.tamanio-7 {
+    font-size: 7pt;
+}
+
+.tamanio-6-5 {
+    font-size: 6.5pt;
+}
+
+.tamanio-6 {
+    font-size: 6pt;
+}
+
+.tamanio-5-5 {
+    font-size: 5.5pt;
+}
+
+.tamanio-5 {
+    font-size: 5.5pt;
+}
+
+.tamanio-4-5 {
+    font-size: 4.5pt;
+}
+
+.tamanio-4 {
+    font-size: 4pt;
+}
+
+.tamanio-3-5 {
+    font-size: 3.5pt;
+}
+
+.tamanio-3 {
+    font-size: 3pt;
+}
+
+.tamanio-2-5 {
+    font-size: 2.5pt;
+}
+
+.tamanio-2 {
+    font-size: 2pt;
+}
+
+.tamanio-1-5 {
+    font-size: 1.5pt;
+}
+
+.tamanio-1 {
+    font-size: 1pt;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.mayuscula {
+    text-transform: uppercase;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.lineapunteada {
+    border-bottom: 1px dashed rgb(133, 131, 131); 
+    width: 100%;
+}

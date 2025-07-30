@@ -1,0 +1,157 @@
+.tree-table-wrap {
+  width: 100%;
+  overflow-x: auto; /* Permite el desplazamiento horizontal en pantallas pequeñas */
+}
+
+.tree-table {
+  border: 1px solid #f1f1f1;
+  table-layout: auto; /* Cambiar a auto para permitir el redimensionamiento de columnas */
+  width: 100%;
+  border-collapse: collapse;
+  position: relative; /* Agregar posición relativa para que las columnas se puedan redimensionar */
+}
+
+.tree-table th {
+  color: #333;
+  text-align: center;
+  padding: 10px 0;
+  background: #fafafa;
+  font-size: 13px;
+  border: 1px solid #f1f1f1;
+  position: relative;
+  cursor: col-resize; /* Cambiar el cursor para indicar que la columna es redimensionable */
+}
+
+.tree-table td {
+  border: 1px solid #f1f1f1;
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative; /* Necesario para la interacción de la columna */
+}
+
+.tree-table td:not(.dropdown) {
+  overflow: hidden;
+}
+
+.tree-table tr td:first-child {
+  overflow: initial;
+}
+
+.tree-table-space-block {
+  border: 1px solid transparent;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 16px;
+  text-align: center;
+  vertical-align: top;
+  font-size: 19px;
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 7px;
+  border-radius: 50%;
+  margin-left: 20px; /* Ajustamos margen para que se vea alineado */
+}
+
+.tree-table-space-block:first-child {
+  margin-left: 7px;
+}
+
+.tree-table-space-block.btn-toggle {
+  border: 1px solid #d9d9d9;
+  position: relative;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  z-index: 12;
+}
+
+.tree-table-space-block.btn-toggle.is-close {
+  background: #f1f1f1;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Línea vertical que conecta los elementos */
+.tree-table-space-block:before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 36px; /* Ajustamos la altura de la línea */
+  background: #d9d9d9;
+  left: 50%;
+  top: -27px; /* Ajuste vertical */
+  z-index: -1;
+}
+
+/* Nodo central con círculo */
+.tree-table-space-block i {
+  display: block;
+  width: 3px;
+  height: 3px;
+  margin-left: 8px;
+  margin-top: 7px;
+  background: #d9d9d9;
+  border-radius: 50%;
+}
+
+.tree-table-space-block.btn-toggle:before {
+  display: none;
+}
+
+/* Último bloque, sin línea hacia abajo */
+.tree-table-space-block.last-block:before {
+  display: none; /* No mostrar línea en el último bloque */
+}
+
+/* Asegura que la línea solo se dibuje entre elementos padres e hijos */
+.tree-table-space-block.last-block:after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: #d9d9d9;
+  top: 50%;
+  margin-top: -1px;
+  left: -10px;
+}
+
+.tree-table-space-block.btn-toggle:after {
+  display: none;
+}
+
+.tree-table tr td .tree-table-space-block:first-child:after {
+  display: none;
+}
+
+.tree-table-td-content {
+  display: inline-block;
+  padding: 7px;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  visibility: visible;
+}
+
+/* Ajuste para que la línea vertical se dibuje correctamente entre nodos padres e hijos */
+.tree-table-space-block {
+  position: relative; /* Asegura que el pseudo-elemento se posicione correctamente */
+}
+
+/* Ajuste para que la línea aparezca en todos los bloques intermedios (entre padres e hijos) */
+.tree-table-space-block:not(.last-block):before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 36px; /* Altura ajustable para la línea */
+  background: #d9d9d9;
+  left: 50%;
+  top: -27px; /* Posicionamos la línea hacia arriba */
+  z-index: -1;
+}
